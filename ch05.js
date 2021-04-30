@@ -35,7 +35,7 @@
 // console.log(power(10));
 // console.log(power(20));
 
-// ///
+
 // function foo4(y) {
 //     let bar = y*y;
 //     return bar;
@@ -57,12 +57,12 @@
 // print("사과",10);
 // print("사과");
 
-// function tenTimes(foo){
-//     for(i=1; i<10; i++)
-// }
-// function tenTimes(function(){
-//     console.log("함수 호출");
-// });
+//  function tenTimes(foo){
+//      for(i=1; i<10; i++)
+//  }
+//  function tenTimes(function(){
+//      console.log("함수 호출");
+//  });
 
 // let inputA = '52';
 // let inputB = '52.273';
@@ -77,6 +77,23 @@
 // console.log(parseInt(inputC));
 // console.log(parseFloat(inputC));
 
-setTimeout(() => {
-    console.log("1초 경과");
-}, 1000)
+// setTimeout(() => {
+//     console.log("1초 경과");
+// }, 1000)
+
+// let foo = setInterval(()=>{
+//     console.log("인터벌 1초 경과!!!");
+// },1000)
+
+// setTimeout(()=>{
+//     clearInterval(foo);
+// },6000)
+
+let foo = {
+    제품명 : "건조 망고",
+    유형 : "당절임",
+    원산지 : "필리핀"
+};
+
+console.log(foo.제품명);
+
