@@ -6,7 +6,7 @@
 #### <span style="color:yellow">객체 기본</span>
 * 배열<br>
 let array=[ ];<br>
-![배열선언방법](./js업로드자료/배열선언.png)<br>
+![배열선언방법](../js업로드자료/배열선언.png)<br>
 배열에는 인덱스와 요소가 있음<br>
 array[n]<br>
 ![배열인덱스](./js업로드자료/배열인덱스.png)<br>
