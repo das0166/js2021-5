@@ -23,7 +23,7 @@ for in 반복문 사용해 객체에 반복문 적용
 #### <span style="color:yellow">속성과 메소드</span>
 자료형이 함수인 속성 -> 메소드
 객체에 있는 속성을 메소드에서 사용하고 싶을 때 this 키워드를 사용하여 자신이 가지고 있는 속성이라는 것을 표시해야함
-![this키워드사용](./js업로드자료/this키워드사용.png)<br>
+![this키워드사용](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/this%ED%82%A4%EC%9B%8C%EB%93%9C%EC%82%AC%EC%9A%A9.PNG)<br>
 객체 object에는 name, price, print 속성이 있음<br>
 print 속성은 함수 이므로 print 메소드라고 부름<br>
 #### <span style="color:yellow">개요</span>
