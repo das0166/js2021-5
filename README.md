@@ -11,18 +11,18 @@ let array=[ ];<br>
 array[n]<br>
 ![배열인덱스](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EB%B0%B0%EC%97%B4%EC%9D%B8%EB%8D%B1%EC%8A%A4.PNG)<br>
 >배열과 객체 다른 점 -> 배열은 요소에 접근할 때 인덱스 사용, 객체는 키 사용<br>
-배열 내부에 있는 값 : 요소 / 객체 내부에 있는 값 : 속성
+배열 내부에 있는 값 : 요소 / 객체 내부에 있는 값 : 속성<br>
 * 객체<br>
 let 객체명 = { 키와 속성 작성 };<br>
 ![객체선언](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EA%B0%9D%EC%B2%B4%EC%84%A0%EC%96%B8.PNG)<br>
-객체 접근 방법
+객체 접근 방법<br>
 ![객체접근방법](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EA%B0%9D%EC%B2%B4%EC%A0%91%EA%B7%BC.PNG)<br>
 #### <span style="color:yellow">객체와 반복문</span>
-for in 반복문 사용해 객체에 반복문 적용
+for in 반복문 사용해 객체에 반복문 적용<br>
 ![객체반복문](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EA%B0%9D%EC%B2%B4%EB%B0%98%EB%B3%B5%EB%AC%B8.PNG)<br>
 #### <span style="color:yellow">속성과 메소드</span>
-자료형이 함수인 속성 -> 메소드
-객체에 있는 속성을 메소드에서 사용하고 싶을 때 this 키워드를 사용하여 자신이 가지고 있는 속성이라는 것을 표시해야함
+자료형이 함수인 속성 -> 메소드<br>
+객체에 있는 속성을 메소드에서 사용하고 싶을 때 this 키워드를 사용하여 자신이 가지고 있는 속성이라는 것을 표시해야함<br>
 ![this키워드사용](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/this%ED%82%A4%EC%9B%8C%EB%93%9C%EC%82%AC%EC%9A%A9.PNG)<br>
 객체 object에는 name, price, print 속성이 있음<br>
 print 속성은 함수 이므로 print 메소드라고 부름<br>
@@ -32,7 +32,7 @@ print 속성은 함수 이므로 print 메소드라고 부름<br>
 자바스크립트는 객체 지향 프로그래밍 언어이므로 function printProduct(product) 함수를 따로 선언하여 프린트하면 안되고 product.print() 메소드 작성<br>
 #### <span style="color:yellow">생성자 함수</span>
 생성자 함수 : 객체를 만드는 함수<br>
-![생성자함수](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EC%83%9D%EC%84%B1%EC%9E%90%ED%95%A8%EC%88%98.PNG<br>
+![생성자함수](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EC%83%9D%EC%84%B1%EC%9E%90%ED%95%A8%EC%88%98.PNG)<br>
 new키워드와 함께 사용해 객체를 생성<br>
 #### <span style="color:yellow">프로토타입</span>
 생성자 함수로 만든 객체는 프로토타입이라는 공간에 메소드를 지정해서 모든 객체가 공유하도록 만듬 / 프로토타입은 모든 함수가 가지고 있는 속성으로 해당 함수를 생성자 함수로 사용했을 때만 의미 있음<br>
