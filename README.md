@@ -10,56 +10,56 @@ Number, String, Boolean 생성자 함수를 사용해서 숫자, 문자열, 불�
 > 차이점<br>
 기본 자료형은 객체가 아니므로 속성과 메소드 추가 불가<br>
 
-    + 기본 자료형에 속성 또는 메소드를 추가해도 기본 자료형에 추가하자마자 버림
+     기본 자료형에 속성 또는 메소드를 추가해도 기본 자료형에 추가하자마자 버림 
 
 * Number 객체<br>
     + number 객체 생성 2가지 방법 
 ![number객체생성](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/number%EA%B0%9D%EC%B2%B4%EC%83%9D%EC%84%B1.PNG)<br>
-    + number 객체가 가진 메소드의 종류
-![number객체가가진메소드종류](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/number%EA%B0%9D%EC%B2%B4%EA%B0%80%EA%B0%80%EC%A7%84%EB%A9%94%EC%84%9C%EB%93%9C.PNG)
+    + number 객체가 가진 메소드의 종류<br>
+![number객체가가진메소드종류](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/number%EA%B0%9D%EC%B2%B4%EA%B0%80%EA%B0%80%EC%A7%84%EB%A9%94%EC%84%9C%EB%93%9C.PNG)<br>
 <span style="color:red">tip.</span> toFixed(n)를 사용할때 원하는 소수점 자리의 개수를 n에 입력<br>
-    + number 생성자 함수의 속성
-![number생성자함수의속성](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/number%EC%83%9D%EC%84%B1%EC%9E%90%ED%95%A8%EC%88%98%EC%9D%98%EC%86%8D%EC%84%B1.PNG)
+    + number 생성자 함수의 속성<br>
+![number생성자함수의속성](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/number%EC%83%9D%EC%84%B1%EC%9E%90%ED%95%A8%EC%88%98%EC%9D%98%EC%86%8D%EC%84%B1.PNG)<br>
 
-* String 객체
-    + String 객체 생성 두가지 방법
-![string객체생성2가지방법](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/string%EA%B0%9D%EC%B2%B4%EC%83%9D%EC%84%B1.PNG)
+* String 객체<br>
+    + String 객체 생성 두가지 방법<br>
+![string객체생성2가지방법](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/string%EA%B0%9D%EC%B2%B4%EC%83%9D%EC%84%B1.PNG)<br>
     + String 객체는 length 속성을 가짐<br>
-    + String 객체의 메소드
+    + String 객체의 메소드<br>
     ![string객체메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/string%EA%B0%9D%EC%B2%B4%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
-   <span style="color:yellow">'자기 자신을 변경하는 것'이 아니라 '변경된 값을 리턴하는 것'</span>
-    + 메소드 활용
+   <span style="color:yellow">'자기 자신을 변경하는 것'이 아니라 '변경된 값을 리턴하는 것'</span><br>
+    + 메소드 활용<br>
         + 특정 문자 열이 있는지 알 수 있는 방법<br>
     indexOf('찾고자하는단어' >= 0) : 리턴값이 0보다 크면 단어가 있는 것이고 -1이라면 없다는 것<br>
         + 문자열 분해<br>
         split(',') 를 사용하면 ,이 있는 단어를 분해해서 출력 <Br>
-        ![split메소드사용](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/split%EB%A9%94%EC%86%8C%EB%93%9C%EC%82%AC%EC%9A%A9.PNG)
-* Date 객체
-    + Date 객체 생성 방법
-    ![date객체생성방법](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/date%EA%B0%9D%EC%B2%B4%EC%83%9D%EC%84%B1%EB%B0%A9%EB%B2%95.PNG)
+        ![split메소드사용](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/split%EB%A9%94%EC%86%8C%EB%93%9C%EC%82%AC%EC%9A%A9.PNG)<br>
+* Date 객체<br>
+    + Date 객체 생성 방법<br>
+    ![date객체생성방법](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/date%EA%B0%9D%EC%B2%B4%EC%83%9D%EC%84%B1%EB%B0%A9%EB%B2%95.PNG)<br>
     Month를 나타내는 '월'은 0부터 시작<br>
-    + 메소드 활용
+    + 메소드 활용<br>
     get OO()형태의 메소드와 set OO()형태의 메소드만 가짐<br>
     OO안에 들어가는 것들 -> FullYear, Month, Day, Hours, Minutes, Seconds등<br>
 
-* Array 객체
-    + Array 객체의 메소드
-    ![Array객체메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/array%EA%B0%9D%EC%B2%B4%EB%A9%94%EC%86%8C%EB%93%9C.PNG)
+* Array 객체<br>
+    + Array 객체의 메소드<br>
+    ![Array객체메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/array%EA%B0%9D%EC%B2%B4%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
     <span style="color:red">tip.</span> Array객체 대부분은 자기 자신을 변경함<br>
-* 조금 더 나아가기
+* 조금 더 나아가기<br>
     + 프로토타입에 메소드 추가<br>
     프로토타입에 메소드를 추가하면 해당 자료형 전체에 추가할 수 있음<br>
-    String 생성자 함수의 prototype 속성에 contain()메소드 추가
-    ![프로토타입에메소드추가](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EC%97%90%EB%A9%94%EC%86%8C%EB%93%9C%EC%B6%94%EA%B0%80.PNG)
-    화살표 함수 사용 X (익명함수에서 this는 자기 자신을 나타내지만 화살표함수에서의 this는 최상위 객체를 의미하기 때문에)
-    + JSON 객체
+    String 생성자 함수의 prototype 속성에 contain()메소드 추가<br>
+    ![프로토타입에메소드추가](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EC%97%90%EB%A9%94%EC%86%8C%EB%93%9C%EC%B6%94%EA%B0%80.PNG)<br>
+    화살표 함수 사용 X (익명함수에서 this는 자기 자신을 나타내지만 화살표함수에서의 this는 최상위 객체를 의미하기 때문에)<br>
+    + JSON 객체<br>
     JSON이란 자바스크립트 객체를 사용한 데이터 표현 방법<br>
         + 몇가지 제약<br>
             1. 문자열은 큰따옴표로 만들어야함
             2. 모든 키는 큰따옴표로 감싸야함
             3. 숫자, 문자열, 불 자료형만 사용 가능
-    JSON 객체의 메소드
-    ![JSON객체의메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/json%EA%B0%9D%EC%B2%B4%EB%A9%94%EC%86%8C%EB%93%9C.PNG)
+    JSON 객체의 메소드<br>
+    ![JSON객체의메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/json%EA%B0%9D%EC%B2%B4%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
 
 
 
