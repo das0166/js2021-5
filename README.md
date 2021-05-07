@@ -1,6 +1,69 @@
 # 배다슬[201930216]
 <hr/>
 
+## [05월 4일]
+### <span style="color:red">표준 내장 객체</span>
+* 기본 자료형과 객체 자료형의 차이<br>
+    + 기본 자료형 : 숫자, 문자열, 불<br>
+Number, String, Boolean 생성자 함수를 사용해서 숫자, 문자열, 불을 만들 수 있음. 이때 typeof 를 사용하면 객체가 됨. 즉, 자료형인 object를 출력<br>
+    + <span style="color:yellow">기본 자료형도 속성과 메소드를 가지고 있는 이유</span> -> 기본 자료형의 속성 또는 메소드를 사용할 때 기본 자료형이 자동으로 객체로 변환되기 때문<br>
+> 차이점<br>
+기본 자료형은 객체가 아니므로 속성과 메소드 추가 불가<br>
+
+    + 기본 자료형에 속성 또는 메소드를 추가해도 기본 자료형에 추가하자마자 버림
+
+* Number 객체<br>
+    + number 객체 생성 2가지 방법 
+![number객체생성](js업로드자료/number객체생성.png)<br>
+    + number 객체가 가진 메소드의 종류
+![number객체가가진메소드종류](js업로드자료/number객체가가진메서드.png)
+<span style="color:red">tip.</span> toFixed(n)를 사용할때 원하는 소수점 자리의 개수를 n에 입력<br>
+    + number 생성자 함수의 속성
+![number생성자함수의속성](js업로드자료/number생성자함수의속성.png)
+
+* String 객체
+    + String 객체 생성 두가지 방법
+![string객체생성2가지방법](js업로드자료/string객체생성.png)
+    + String 객체는 length 속성을 가짐<br>
+    + String 객체의 메소드
+    ![string객체메소드](js업로드자료/string객체메소드.png)<br>
+   <span style="color:yellow">'자기 자신을 변경하는 것'이 아니라 '변경된 값을 리턴하는 것'</span>
+    + 메소드 활용
+        + 특정 문자 열이 있는지 알 수 있는 방법<br>
+    indexOf('찾고자하는단어' >= 0) : 리턴값이 0보다 크면 단어가 있는 것이고 -1이라면 없다는 것<br>
+        + 문자열 분해<br>
+        split(',') 를 사용하면 ,이 있는 단어를 분해해서 출력 <Br>
+        ![split메소드사용](js업로드자료/split메소드사용.png)
+* Date 객체
+    + Date 객체 생성 방법
+    ![date객체생성방법](js업로드자료/date객체생성방법.png)
+    Month를 나타내는 '월'은 0부터 시작<br>
+    + 메소드 활용
+    get OO()형태의 메소드와 set OO()형태의 메소드만 가짐<br>
+    OO안에 들어가는 것들 -> FullYear, Month, Day, Hours, Minutes, Seconds등<br>
+
+* Array 객체
+    + Array 객체의 메소드
+    ![Array객체메소드](js업로드자료/array객체메소드.png)
+    <span style="color:red">tip.</span> Array객체 대부분은 자기 자신을 변경함<br>
+* 조금 더 나아가기
+    + 프로토타입에 메소드 추가<br>
+    프로토타입에 메소드를 추가하면 해당 자료형 전체에 추가할 수 있음<br>
+    String 생성자 함수의 prototype 속성에 contain()메소드 추가
+    ![프로토타입에메소드추가](js업로드자료/프로토타입에메소드추가.png)
+    화살표 함수 사용 X (익명함수에서 this는 자기 자신을 나타내지만 화살표함수에서의 this는 최상위 객체를 의미하기 때문에)
+    + JSON 객체
+    JSON이란 자바스크립트 객체를 사용한 데이터 표현 방법<br>
+        + 몇가지 제약<br>
+            1. 문자열은 큰따옴표로 만들어야함
+            2. 모든 키는 큰따옴표로 감싸야함
+            3. 숫자, 문자열, 불 자료형만 사용 가능
+    JSON 객체의 메소드
+    ![JSON객체의메소드](js업로드자료/json객체메소드.png)
+
+
+
+
 ## [04월 27일]
 ### <span style="color:red">객체</span>
 #### <span style="color:yellow">객체 기본</span>
