@@ -41,7 +41,7 @@
 + 예외 객체<br>
     + 어떤 예외가 발생했는지 정보 전달<br>
     + ReferenceError 후에 예외 객체의 name 속성과 message 속성 출력<br>
-    ![예외객체]("js업로드자료/예외 객체.PNG")<br>
+    ![예외객체](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EC%98%88%EC%99%B8%20%EA%B0%9D%EC%B2%B4.PNG)<br>
 + 예외 강제 발생<br>
     + throw 키워드 사용<br>
     + throw 키워드 뒤에는 문자열 또는 Error 객체 입력<br>
