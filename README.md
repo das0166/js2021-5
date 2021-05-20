@@ -10,13 +10,13 @@
     + process 객체의 속성과 이벤트<br>
         + process 객체 : 프로세스 정보를 제공하며 제어할 수 있게 하는 객체<br>
             + process 객체의 속성<br>
-            ![process객체의속성](https://github.com/das0166/js2021-5/commit/07655bf16d08dff348af7e716d988422b25d54d0#diff-fc4abe84f975e3bb8b36c0e35e233cad2076acb4ba410c7ae1872db1cad115f2)<br>
+            ![process객체의속성](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/process%EA%B0%9D%EC%B2%B4%EC%86%8D%EC%84%B1.PNG)<br>
             + process 객체의 메소드<br>
-            ![process객체의메소드](https://github.com/das0166/js2021-5/commit/07655bf16d08dff348af7e716d988422b25d54d0#diff-9a21627cea19d039f694b8f32d9c35deceefce53e4132c59b227b73668d06fd2)<br>
+            ![process객체의메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/process%EA%B0%9D%EC%B2%B4%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
             + Node.js의 이벤트 연결 메소드<br>
-            ![Node.js의이벤트연결메소드](https://github.com/das0166/js2021-5/commit/07655bf16d08dff348af7e716d988422b25d54d0#diff-0ba68fa145e32cfc18544a82edf6a5102ac442d133970feecfb7e3ed879d24f5)<br>
+            ![Node.js의이벤트연결메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%97%B0%EA%B2%B0%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
             + process객체의 이벤트<br>
-            ![process객체의이벤트](https://github.com/das0166/js2021-5/commit/07655bf16d08dff348af7e716d988422b25d54d0#diff-2f5bbd0fef15e28e6352f5f11946bea58e94f11b485b68950e70fd131967b514)<br>
+            ![process객체의이벤트](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/process%EA%B0%9D%EC%B2%B4%EC%9D%98%EC%9D%B4%EB%B2%A4%ED%8A%B8.PNG)<br>
     + process 객체와 이벤트 개요<br>
         + 이벤트 매개 변수 : 이벤트 핸들러의 매개변수로 전달되는 매게변수<br>
         ```javascript
@@ -30,14 +30,14 @@
         const os = require('os');
         ```
         + os 모듈의 메소드<br> 
-        ![os모듈의메소드](https://github.com/das0166/js2021-5/commit/07655bf16d08dff348af7e716d988422b25d54d0#diff-917c0ec93b00e20bfd01c082b99cec8f028c21c7fca605d6054b9abd3ec18604)<br>
+        ![os모듈의메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/os%EB%AA%A8%EB%93%88%EC%9D%98%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
     + url 모듈<br>
         + url 모듈 추출<br>
         ```javascript
         const url = require('url');
         ```
         + url 모듈의 메소드<br>
-        ![url 모듈의 메소드](https://github.com/das0166/js2021-5/commit/07655bf16d08dff348af7e716d988422b25d54d0#diff-40a9ff9f5b6b9c5eaade518875a06d6a908ba62be50fd97ef2335913562c46aa)<br>
+        ![url 모듈의 메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/url%EB%AA%A8%EB%93%88%EC%9D%98%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
         > url 모듈을 추출하고 parse()메소드를 사용해야함
     + File System 모듈<br>
         + fs모듈 추출 방법<br>
@@ -47,7 +47,7 @@
         + 파일 읽기<br>
             + 실행할 자바스크립트 파일이 있는 폴더에 textfile.txt 이름의 파일 생성<br>
             + 파일 읽기 메소드<br>
-            ![파일읽기메소드](https://github.com/das0166/js2021-5/commit/07655bf16d08dff348af7e716d988422b25d54d0#diff-4d968586be3a3b86e1bb402b6ca54cf24e5b54673af907cf5aa469170c80ea75)<br>
+            ![파일읽기메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%ED%8C%8C%EC%9D%BC%EC%9D%BD%EA%B8%B0%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
             > 동기와 비동기의 실행 결과는 같지만 내부 실행 구조는 다름
             + 동기적으로 파일을 읽어 들일 때 코드 순서<br>
              ```javascript
@@ -84,7 +84,7 @@
                 2. 자바스크립트 프로그래밍 언어는 C++, 자바보다 느리지만 Node.js를 사용하면 손쉽게 비동기 처리를 구현하여 빠른 처리 가능
         + 파일 쓰기<br>
             + 파일 쓰기 메소드<br>
-            ![파일쓰기메소드](https://github.com/das0166/js2021-5/commit/07655bf16d08dff348af7e716d988422b25d54d0#diff-1a2a52ab329984283c6eb4ce87be2c471920b90f426f3ac00ee533cf1691e02d)<br>
+            ![파일쓰기메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%ED%8C%8C%EC%9D%BC%EC%93%B0%EA%B8%B0%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
         + 파일 처리와 예외 처리<br>
              + 동기 코드 예외처리 : try catch 구문<br>
              + 비동기 코드 예외처리 : 콜백함수의 첫 번째 매개 변수 error을 활용<br>
