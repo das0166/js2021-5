@@ -1,7 +1,131 @@
 # 배다슬[201930216]
 <hr/>
 
-## [05월 11일]
+## [05월 18일]
+### <span style="color:red">Node.js 기본</span>
+* 전역 변수<br>
+    + 전역 변수, 전역 함수, 전역 객체 : 모든 곳에서 사용할 수 있는 것들<br>
+        + __filename : 현재 실행 중인 코드의 파일 경로<br>
+        + __dirname : 현재 실행 중인 코드의 폴더 경로<br>
+    + process 객체의 속성과 이벤트<br>
+        + process 객체 : 프로세스 정보를 제공하며 제어할 수 있게 하는 객체<br>
+            + process 객체의 속성<br>
+            ![process객체의속성]("js업로드자료/process객체의속성.png")<br>
+            + process 객체의 메소드<br>
+            ![process객체의메소드]( "js업로드자료/process객체의메소드.PNG")<br>
+            + Node.js의 이벤트 연결 메소드<br>
+            ![Node.js의이벤트연결메소드]("js업로드자료/이벤트연결메소드.png")<br>
+            + process객체의 이벤트<br>
+            ![process객체의이벤트]("js업로드자료/process객체의이벤트.png")<br>
+    + process 객체와 이벤트 개요<br>
+        + 이벤트 매개 변수 : 이벤트 핸들러의 매개변수로 전달되는 매게변수<br>
+        ```javascript
+        process.on('exit',(code) => {
+            console.log(`About to exit with code : ${code}`);
+        });
+        ```
+    + os 모듈<br>
+        + os 모듈 추출<br>
+        ```javascript
+        const os = require('os');
+        ```
+        + os 모듈의 메소드<br> 
+        ![os모듈의메소드]("js업로드자료/os모듈의메소드.png")<br>
+    + url 모듈<br>
+        + url 모듈 추출<br>
+        ```javascript
+        const url = require('url');
+        ```
+        + url 모듈의 메소드<br>
+        ![url 모듈의 메소드]("js업로드자료/url모듈의메소드.png")<br>
+        > url 모듈을 추출하고 parse()메소드를 사용해야함
+    + File System 모듈<br>
+        + fs모듈 추출 방법<br>
+        ```javasrcipt
+        const fs = require('fs');
+        ```
+        + 파일 읽기<br>
+            + 실행할 자바스크립트 파일이 있는 폴더에 textfile.txt 이름의 파일 생성<br>
+            + 파일 읽기 메소드<br>
+            ![파일읽기메소드]("js업로드자료/파일읽기메소드.png")<br>
+            > 동기와 비동기의 실행 결과는 같지만 내부 실행 구조는 다름
+            + 동기적으로 파일을 읽어 들일 때 코드 순서<br>
+             ```javascript
+                - 모듈 추출
+                1. const fs = require('fs');
+                - 파일 읽어 들이고 출력
+                2. const file = fs.readFileSync('textfile.txt');
+                3. console.log(file);
+                4. console.log(file.toString());
+                5. - 현재 단계 코드 종료
+            ```
+                파일의 크기가 크다면 2에서 3으로 이동할 때 코드가 정지할 가능성이 있음
+                문제 해결을 위해 쓰레드 기능을 사용해야함
+                Node.js에는 쓰레드의 기본 이념이 들어 있음
+            + 비동기적으로 구성된 코드<br>
+            ```javascript
+                - 모듈 추출
+                1. const fs = require('fs');
+                - 파일을 읽어 들임
+                2. fs.readFile('textfile.txt', (error, file) => {
+                    - 출력
+                    4. console.log(file);
+                    5. console.log(file.toString());
+                    6. - 현재 단계의 코드를 종료
+                });
+                3. -현재 단계의 코드를 종료
+            ```
+                2에서 3으로 이동하는 시간이 0초에 가까움
+                즉, 코드는 진행하고 Node.js의 뒷단에서 파일을 읽어 들이는 처리가 수행됨
+                이러한 뒷단에서 처리가 모두 끝나면 그때 콜백 함수 부분을 실행함
+                콜백 함수의 첫 번째 매개 변수는 오류객체이고 두번째 매개 변수가 원하는 값임
+            + 비동기 처리의 장점<br>
+                1. 웹 서버를 C++ 프로그래밍 언어로 만들면 빠르지만 개발과 유지 보수는 어려움
+                2. 자바스크립트 프로그래밍 언어는 C++, 자바보다 느리지만 Node.js를 사용하면 손쉽게 비동기 처리를 구현하여 빠른 처리 가능
+        + 파일 쓰기<br>
+            + 파일 쓰기 메소드<br>
+            ![파일쓰기메소드]("js업로드자료/파일쓰기메소드.png")<br>
+        + 파일 처리와 예외 처리<br>
+             + 동기 코드 예외처리 : try catch 구문<br>
+             + 비동기 코드 예외처리 : 콜백함수의 첫 번째 매개 변수 error을 활용<br>
+    + 노드 패키지 매니저<br>
+        + npm을 이용한 외부 모듈 설치<br>
+            npm install<모듈이름>@<버전><br>
+            > 명령어 뒤에 @ 기호를 사용하면 원하는 버전 설치 가능
+    + request 모듈<br>
+        웹 요청을 쉽게 만들어 주는 모듈로 외부 모듈임<br>
+        + request 모듈 추출<br>
+            ```javasrcipt
+            const request = require('request');
+            ```
+    + cheerio 모듈<br>
+         request 모듈로 가져온 웹 페이지는 단순한 HTML 문자열<br>
+         여기서 원하는 정보를 추출해야 단순한 '데이터'가 '정보'가 됨 -> 파싱<br>
+         cheerio 모듈 : 가져온 웹 페이지의 특정 위치에서 손쉽게 데이터 추출<br>
+         + cheerio 모듈 설치<br>
+         ```javascript
+            npm install cheerio
+         ```
+         + cheerio 모듈 추출<br>
+         ```javascript
+            const cheerio = require('cheerio');
+         ```
+    + async 모듈<br>
+        + async 모듈 설치<br>
+        ```javascript
+            npm install async
+        ```
+        + async 모듈 추출<br>
+        ```javascript
+            const async = require('async');
+        ```
+        + async 모듈의 parallel() 메소드<br>
+            1. 문제 확인하기 : 비동기 처리를 많이 하면 '콜백 지옥'이 발생<br>
+            > 콜백 지옥이란, 콜백 함수를 여러개 들여쓰기 하여 코드를 보기 힘든 상태를 의미함
+            2. 문서 확인하기 : parallel() 메소드는 병렬 처리를 쉽게 할 수 있게 함<br>
+            > parallel() 메소드 : 콜백 지옥 해결
+
+### [05월 11일]
 ### <span style="color:red">표준 내장 객체2</span>
 * Date 객체<br>
     + Date 객체 생성 방법<br>
