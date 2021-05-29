@@ -15,40 +15,40 @@
 
     + express 모듈을 사용한 서버 생성과 실행<br>
         + express 모듈의 기본 메소드<br>
-        ![express모듈의기본메소드](../js업로드자료/express모듈의기본메소드)<br>
+        ![express모듈의기본메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/express%EB%AA%A8%EB%93%88%EC%9D%98%EA%B8%B0%EB%B3%B8%EB%A9%94%EC%86%8C%EB%93%9C.PNG))<br>
     + 페이지 라우팅<br>
         + 페이지 라우팅 : 클라이언트 요청에 적절한 페이지를 제공하는 기술<br>
         + express 모듈의 페이지 라우팅 메소드<br>
-        ![express모듈의페이지라우팅메소드](../js업로드자료/express모듈의페이지라우팅메소드)<br>
+        ![express모듈의페이지라우팅메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/express%EB%AA%A8%EB%93%88%EC%9D%98%ED%8E%98%EC%9D%B4%EC%A7%80%EB%9D%BC%EC%9A%B0%ED%8C%85%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
         + 페이지 라우팅을 할 때 토큰을 활용함<br>
             1. ':<토큰 이름>' 형태로 설정<br>
             2. 토큰은 다른 문자열로 변환 입가능, request 객체의 params 속성으로 전달됨<br>
     + 요청과 응답<br>
         + response 객체<br>
-        ![response객체의기본메소드](../js업로드자료/response객체의기본메소드)<br>
+        ![response객체의기본메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/response%EA%B0%9D%EC%B2%B4%EC%9D%98%EA%B8%B0%EB%B3%B8%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
         + 데이터 제공<br>
             + send() 메소드 : 사용자에게 데이터 본문을 제공<br>
             + send 메소드는 가장 마지막에 실행해야 하며, 두번 실행할 수 없음<br>
         + Content-Type<br>
             + 서버가 Content-Type을 제공 : 웹 브라우저는 헤더를 확인, 제공된 데이터의 형태를 확인(MIME라는 문자열로 제공)<br>
-            ![MIME형식](../js업로드자료/MIME형식)<br>
+            ![MIME형식](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/MIME%ED%98%95%EC%8B%9D.PNG)<br>
             + MIME 형식을 지정 : type() 메소드 사용<br>
-            ![Content-Type지정메소드](../js업로드자료/Content-Type지정메소등)<br>
+            ![Content-Type지정메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/Content-Type%EC%A7%80%EC%A0%95%EB%A9%94%EC%86%8C%EB%93%B1.PNG)<br>
         + HTTP 상태 코드 : 404 Not Found<br>
             + 상태 코드 : 서버가 클라이언트에 '해당 경로는 이러한 상태'라고 알려 주는 용도<br>
-            ![HTTP상태코드의예](../js업로드자료/HTTP상태코드의예)<br>
+            ![HTTP상태코드의예](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/HTTP%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%EC%9D%98%EC%98%88.PNG)<br>
             + 상태코드를 지정 : status()메소드 사용<br>
-            ![status()](../js업로드자료/status()메소드)<br>
+            ![status()](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/status()%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
             + 리다이렉트 : 3XX, 특수한 상태 코드<br>
                 + 웹 브라우저가 리다이렉트를 확인하면 화면을 출력하지 않고, 응답 헤더에 있는 Location 속성을 확인해서 해당 위치로 이동<br>
                 + 특정 경로로 웹 브라우저를 인도할 때 사용<br>
-                ![redirect()메소드](../js업로드자료/redirect()메소드)<br>
+                ![redirect()메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/redirect()%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
             + request 객체<br>
                 + 요청 매개 변수<br>
-                ![주소분석](../js업로드자료/주소분석)<br>
+                ![주소분석](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EC%A3%BC%EC%86%8C%EB%B6%84%EC%84%9D.PNG)<br>
         + 미들웨어<br>
             + 미들웨어 설정 메소드<br>
-            ![미들웨어설정메소드](../js업로드자료/미들웨어설정메소드)<br>
+            ![미들웨어설정메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4%EC%84%A4%EC%A0%95%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
             + 정적 파일 제공<br>
             웹 페이지에서 변경되지 않는 요소(이미지,음악,자바스크립트 파일,스타일시트 파일 등)을 쉽게 제공<br>
             + morgan 미들웨어<br>
@@ -67,7 +67,7 @@
                     + 요청 본문<br>
                         + 클라이언트가 서버로 본문을 전달할 때 요청 본문의 종류를 함께 전달<br>
                         + MIME 형식<br>
-                        ![요청본문의종류](../js업로드자료/요청본문의종류)<br>
+                        ![요청본문의종류](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EC%9A%94%EC%B2%AD%EB%B3%B8%EB%AC%B8%EC%9D%98%EC%A2%85%EB%A5%98.PNG)<br>
                         + 클라이언트가 어떤 Encoding-Type으로 요청했는지 확인, 변환해서 읽음(복잡) -> body-parser 미들웨어 : 쉽게 처리<br>
                     + 속성 정리 : 클라이언트가 서버로 데이터를 전송하는 세가지 방법<br>
                         + params 객체 : URL의 토큰. 보기 간편<br>
