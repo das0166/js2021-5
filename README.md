@@ -5,36 +5,36 @@
 ### <span style="color:red">웹 브라우저의 자바스크립트</span>
 * 사용할 수 없는 코드<br>
     + let 키워드와 const 키워드<br>
-    ![let키워드와const키워드]()<br>
+    ![let키워드와const키워드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/let%ED%82%A4%EC%9B%8C%EB%93%9C%EC%99%80const%ED%82%A4%EC%9B%8C%EB%93%9C.PNG)<br>
     + 템플릿 문자열<br>
-    ![템플릿문자열]()<br>
+    ![템플릿문자열](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%ED%85%9C%ED%94%8C%EB%A6%BF%EB%AC%B8%EC%9E%90%EC%97%B4.PNG)<br>
     + 화살표 함수<br>
-    ![화살표함수]()<br>
+    ![화살표함수](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%ED%99%94%EC%82%B4%ED%91%9C%ED%95%A8%EC%88%98.PNG)<br>
     + for of 반복문<br>
-    ![forof반복문]()<br>
+    ![forof반복문](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/forof%EB%B0%98%EB%B3%B5%EB%AC%B8.PNG)<br>
     + 사용할 수 없는 메소드를 사용한 코드<br>
-    ![사용할수없는메소드를사용한코드]()<br>
+    ![사용할수없는메소드를사용한코드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EC%82%AC%EC%9A%A9%ED%95%A0%EC%88%98%EC%97%86%EB%8A%94%EB%A9%94%EC%86%8C%EB%93%9C%EB%A5%BC%EC%82%AC%EC%9A%A9%ED%95%9C%EC%BD%94%EB%93%9C.PNG)<br>
 * window 객체<br>
     + window 객체 : 웹 페이지 자체를 나타냄<br>
         + 새로운 화면을 열거나 웹 브라우저의 크기를 변경하는 등의 일<br>
         + 경고 출력을 하는 경고창과 입력을 하는 프롬프트를 제공<br>
-        ![경고함수와입력함수]()<br>
+        ![경고함수와입력함수](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EA%B2%BD%EA%B3%A0%ED%95%A8%EC%88%98%EC%99%80%EC%9E%85%EB%A0%A5%ED%95%A8%EC%88%98.PNG)<br>
 * screen 객체<br>
     + 웹 브라우저에서 공통으로 활용할 수 있는 속성<br>
-    ![screen객체의속성]()<br>
+    ![screen객체의속성](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/screen%EA%B0%9D%EC%B2%B4%EC%9D%98%EC%86%8D%EC%84%B1.PNG)<br>
 * location 객체와 history 객체<br>
     + 웹 브라우저에서 공통으로 활용할 수 있는 속성<br>
-    ![location객체의속성]()<br>
+    ![location객체의속성](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/location%EA%B0%9D%EC%B2%B4%EC%9D%98%EC%86%8D%EC%84%B1.PNG)<br>
     + 메소드<br>
-    ![location객체의메소드]()<br>
+    ![location객체의메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/location%EA%B0%9D%EC%B2%B4%EC%9D%98%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
     + 페이지 이동 : assign()메소드, replace()메소드 : <뒤로 가기>버튼을 사용할 수 없음<br>
-    ![페이지이동]()<br>
+    ![페이지이동](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9D%B4%EB%8F%99.PNG)<br>
     + history객체의 메소드<br>
-    ![history객체의메소드]()<br>
+    ![history객체의메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/history%EA%B0%9D%EC%B2%B4%EC%9D%98%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
 * navigator 객체<br>
     + 웹 페이지를 실행하는 웹 브라우저 정보가 들어가있음<br>
     + 사용자의 웹 브라우저, 운영체제를 구분할 수 있음<br>
-    ![navigator객체의속성]()<br>
+    ![navigator객체의속성](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/navigator%EA%B0%9D%EC%B2%B4%EC%9D%98%EC%86%8D%EC%84%B1.PNG)<br>
 ### <span style="color:red">jQuery</span>
 * jQuery 객체<br>
     + jQuery 라이브러리는 $ 함수 활용<br>
@@ -53,7 +53,7 @@
         + each() -> 선택한 문서 객체에 반복 적용<br>
         > ECMAScript5에서 제공하는 Array 객체의 forEach() 메소드와 인덱스, 요소 순서가 다름
 
-        ![each()메소드의콜백함수]()<br>
+        ![each()메소드의콜백함수](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/each()%EB%A9%94%EC%86%8C%EB%93%9C%EC%9D%98%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.PNG)<br>
 * 문서 객체 조작<br>
     + 문자 조작<br>
         1. text() -> html 태그 내부의 문자를 조작<br>
@@ -87,7 +87,7 @@
 * 문서 객체 생성<br>
     1. $() 함수의 매개 변수에 HTML 형식의 문자열 입력<br>
     + 문서 객체 추가 메소드<br>
-    ![문서객체추가메소드]()<br>
+    ![문서객체추가메소드](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EB%AC%B8%EC%84%9C%EA%B0%9D%EC%B2%B4%EC%B6%94%EA%B0%80%EB%A9%94%EC%86%8C%EB%93%9C.PNG)<br>
 * 이벤트<br>
     1. on() -> 이벤트 연결<br>
     2. off() -> 이벤트 제거<br>
@@ -99,13 +99,13 @@
         $(<선택자>).on(<이벤트 이름>,<콜백 함수>)
         ```
         + 키보드 이벤트<br>
-        ![키보드이벤트]()<br>
+        ![키보드이벤트](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%ED%82%A4%EB%B3%B4%EB%93%9C%EC%9D%B4%EB%B2%A4%ED%8A%B8.PNG)<br>
         + 마우스 이벤트<br>
-        ![마우스이벤트]()<br>
+        ![마우스이벤트](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EB%A7%88%EC%9A%B0%EC%8A%A4%EC%9D%B4%EB%B2%A4%ED%8A%B8.PNG)<br>
         + 입력 양식 이벤트<br>
-        ![입력양식이벤트]()<br>
+        ![입력양식이벤트](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EC%9E%85%EB%A0%A5%EC%96%91%EC%8B%9D%EC%9D%B4%EB%B2%A4%ED%8A%B8.PNG)<br>
         + 웹 브라우저 이벤트<br>
-        ![웹브라우저이벤트]()<br>
+        ![웹브라우저이벤트](https://github.com/das0166/js2021-5/blob/master/js%EC%97%85%EB%A1%9C%EB%93%9C%EC%9E%90%EB%A3%8C/%EC%9B%B9%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%B4%EB%B2%A4%ED%8A%B8.PNG)<br>
     + 이벤트 간접 연결<br>
         + 부모에게 이벤트를 위임해서 부모가 이벤트를 처리하게 하는 것<br>
         ```javascript
