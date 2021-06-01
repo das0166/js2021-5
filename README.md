@@ -1,6 +1,167 @@
 # 배다슬[201930216]
 <hr/>
 
+## [06월 01일]
+### <span style="color:red">웹 브라우저의 자바스크립트</span>
+* 사용할 수 없는 코드<br>
+    + let 키워드와 const 키워드<br>
+    ![let키워드와const키워드]()<br>
+    + 템플릿 문자열<br>
+    ![템플릿문자열]()<br>
+    + 화살표 함수<br>
+    ![화살표함수]()<br>
+    + for of 반복문<br>
+    ![forof반복문]()<br>
+    + 사용할 수 없는 메소드를 사용한 코드<br>
+    ![사용할수없는메소드를사용한코드]()<br>
+* window 객체<br>
+    + window 객체 : 웹 페이지 자체를 나타냄<br>
+        + 새로운 화면을 열거나 웹 브라우저의 크기를 변경하는 등의 일<br>
+        + 경고 출력을 하는 경고창과 입력을 하는 프롬프트를 제공<br>
+        ![경고함수와입력함수]()<br>
+* screen 객체<br>
+    + 웹 브라우저에서 공통으로 활용할 수 있는 속성<br>
+    ![screen객체의속성]()<br>
+* location 객체와 history 객체<br>
+    + 웹 브라우저에서 공통으로 활용할 수 있는 속성<br>
+    ![location객체의속성]()<br>
+    + 메소드<br>
+    ![location객체의메소드]()<br>
+    + 페이지 이동 : assign()메소드, replace()메소드 : <뒤로 가기>버튼을 사용할 수 없음<br>
+    ![페이지이동]()<br>
+    + history객체의 메소드<br>
+    ![history객체의메소드]()<br>
+* navigator 객체<br>
+    + 웹 페이지를 실행하는 웹 브라우저 정보가 들어가있음<br>
+    + 사용자의 웹 브라우저, 운영체제를 구분할 수 있음<br>
+    ![navigator객체의속성]()<br>
+### <span style="color:red">jQuery</span>
+* jQuery 객체<br>
+    + jQuery 라이브러리는 $ 함수 활용<br>
+    + $ 함수의 매개 변수에는 문서 객체, CSS 형식, HTML 형식의 문자열 삽입<br>
+    + $(document).ready() -> 문서 객체의 생성 완료 시점을 잡는 이벤트 연결<br>
+* 문서 객체 선택<br>
+    + 객체 탐색 메소드<br>
+        1. parent() -> 부모 태그 선택<br>
+        2. find() -> 후손 태그 찾기<br>
+* 문서 객체 개별 조작<br>
+    + 선택된 문서 객체의 수<br>
+        + length -> 선택된 문서 객체의 수를 구함<br>
+    + 선택된 문서 객체 추출<br>
+        + get() -> 선택한 문서 객체 중 하나를 선택<br>
+    + 선택된 문서 객체 반복 적용<br>
+        + each() -> 선택한 문서 객체에 반복 적용<br>
+        > ECMAScript5에서 제공하는 Array 객체의 forEach() 메소드와 인덱스, 요소 순서가 다름
+
+        ![each()메소드의콜백함수]()<br>
+* 문서 객체 조작<br>
+    + 문자 조작<br>
+        1. text() -> html 태그 내부의 문자를 조작<br>
+        2. html 태그 내부의 문자를 조작(HTML 태그 인식)<br>
+        + 선택자로 여러 개의 문서 객체를 선택할 때 text() 메소드는 모든 문서 객체 내부의 문자를 출력, html() 메소드는 첫 번째 문서 객체 내부의 문자 출력<br>
+        + 문서 객체 내부의 문자를 변경<br>
+        ```javascript
+        $('h1').text('안녕하세요') -> h1 태그 내부의 문자 설정
+        $('h1').html('안녕하세요') -> h1 태그 내부의 문자 설정
+        ```
+    + 스타일 조작<br>
+        1. css() -> 스타일 조작<br>
+        ```javascript
+        $('h1').css('color') -> h1 태그의 color 스타일 속성을 가져옴
+        $('h1').css('color','red') -> h1태그의 color 스타일 속성을 red로 설정
+        $('h1').css({
+            color:'red',
+            backgroundColor:'orange'
+        }) -> h1 태그의 color 스타일 속성과 backgroundColor 스타일 속성을 한꺼번에 설정
+        ```
+    + 속성 조작<br>
+        1. attr() -> 속성 조작<br>
+        ```javascript
+        $('img').attr('src') -> img태그의 src 속성을 가져옴
+        $('img').css('src','http://placehold.it/100x100') -> img태그의 src 속성을 http://placehold.it/100x100 으로 설정
+        $('img').css({
+            src:'http://placehold.it/100x100',
+            alt:'placehold.it'
+        }) -> img 태그의 src 속성과 alt 속성을 한꺼번에 저장
+        ```
+* 문서 객체 생성<br>
+    1. $() 함수의 매개 변수에 HTML 형식의 문자열 입력<br>
+    + 문서 객체 추가 메소드<br>
+    ![문서객체추가메소드]()<br>
+* 이벤트<br>
+    1. on() -> 이벤트 연결<br>
+    2. off() -> 이벤트 제거<br>
+    + 이벤트 직접 연결<br>
+        + 특정 태그에 이벤트 연결하고 특정 태그 눌렀을때 이벤트 발생<br>
+        + jQuery로 이벤트 직접 연결할 때는 on() 메소드 사용<br>
+        + 기본 형태<br>
+        ```javascript
+        $(<선택자>).on(<이벤트 이름>,<콜백 함수>)
+        ```
+        + 키보드 이벤트<br>
+        ![키보드이벤트]()<br>
+        + 마우스 이벤트<br>
+        ![마우스이벤트]()<br>
+        + 입력 양식 이벤트<br>
+        ![입력양식이벤트]()<br>
+        + 웹 브라우저 이벤트<br>
+        ![웹브라우저이벤트]()<br>
+    + 이벤트 간접 연결<br>
+        + 부모에게 이벤트를 위임해서 부모가 이벤트를 처리하게 하는 것<br>
+        ```javascript
+        $(document).ready(function (){
+            //body태그에 h1  태그의 click 이벤트 위임
+            $('body').on('click', 'h1', function (event){
+                //h1 태그를 생성해서 body 태그에 추가
+                $('<h1></h1>').text($(this).text()).appendTo('body');
+            });
+        });
+        ```
+    + 이벤트 제거<br>
+        + off()메소드 사용<br>
+        ```javascript
+        $(document).ready(function () {
+            var handler = function (event){
+                //h1 태그를 생성해서 body 태그에 추가
+                $('<h1></h1>')
+                    .text($(this).text())
+                    .click(handler)
+                    .appendTo('body');
+                    //현재 태그의 이벤트 제거
+                    $(this).off();
+            };
+            //h1 태그를 클릭하면
+            $('h1').on('click',handler);
+        });
+        ```
+        + 이벤트 제거하는 방법<br>
+        ```javascript
+        $('h1').off(); -> h1 태그의 모든 이벤트 제거
+        $('h1').off('click'); -> h1 태그의 click 이벤트를 모두 제거
+        $('h1').off('click', handler); -> h1 태그의 click 이벤트로 연결한 콜백 함수 중 특정한 콜백 함수만 제거
+        ```
+* 애니메이션<br>
+    1. animate() -> 애니메이션을 적용<br>
+        + 스타일에 적용<br>
+        + 숫자를 적용할 수 있는 모든 속성에 animate() 메소드 사용 가능<br>
+        + 콜백 함수는 애니메이션이 종료되었을 때 호출, 생략 가능<br>
+        ```javascript
+        $(<선택자>).animate(<속성>,<콜백 함수>)
+        ```
+        + 사각형을 클릭하면 오른쪽으로 움직이는 예제<br>
+        ```javascript
+        $(document).ready(function () {
+            //.box 태그를 클릭해서
+            $('.box').click(function () {
+                //1초 동안 left를 1000픽셀로 변경
+                $(this).animate({
+                    left: 1000
+                }, 1000);
+            });
+        });
+        ```
+
+
 ## [05월 25일]
 ### <span style="color:red">express 모듈</span>
 * 요청과 응답<br>
@@ -73,12 +234,6 @@
                         + params 객체 : URL의 토큰. 보기 간편<br>
                         + query 객체 : URL의 요청 매개 변수. 토큰보다 많은 데이터를 전달할 수 있으며 주소로 어떤 데이터가 오고 가는지 확인가능<br>
                         + body 객체 : 대용량 문자열 등을 전송할 때 사용. 주소에 데이터를 기록하지 못하므로 새로고침이나 즐겨찾기 기능 등을 활용할 수 없음<br>
-
-
-
-
-
-
 
 ## [05월 18일]
 ### <span style="color:red">Node.js 기본</span>
